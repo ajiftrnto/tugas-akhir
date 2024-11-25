@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Layout } from "antd";
+import NavbarSidebar from "./components/NavbarSidebar";
+import Dashboard from "./components/Dashboard";
+import MonitoringListrik from "./components/MonitoringListrik"; // Mengarahkan ke "/"
+import { RequestProvider } from "./context/RequestContext";
+import DataTable from "./components/DataTable";
+
+const { Content } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout style={{ marginLeft: 200 }}>
+      <NavbarSidebar />
+      <Content style={{ marginTop: 50 }}>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/monitoring-listrik" element={<MonitoringListrik />} />
+          {/* <Route path="/monitoring-data" element={<DataTable />} /> */}
+        </Routes>
+      </Content>
+    </Layout>
   );
 }
 
-export default App;
+function AppWithRouter() {
+  return (
+    <Router>
+      <RequestProvider>
+        <App />
+      </RequestProvider>
+    </Router>
+  );
+}
+
+export default AppWithRouter;

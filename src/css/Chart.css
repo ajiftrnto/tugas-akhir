@@ -1,0 +1,15 @@
+.chart-container {
+    display: flex; /* Menggunakan Flexbox untuk menata item di dalam container */
+    justify-content: center; /* Memposisikan elemen secara horizontal di tengah */
+    align-items: center; /* Memposisikan elemen secara vertikal di tengah */
+    gap: 20px; /* Menambahkan jarak antara chart */
+    flex-wrap: wrap; /* Agar chart bisa berpindah ke bawah jika ukuran layar kecil */
+  }
+  
+  .chart-box {
+    flex: 1; /* Membuat kedua chart mengambil lebar yang sama */
+    height: 400px; /* Tinggi chart */
+    min-width: 400px; /* Setel lebar minimum agar chart tidak terlalu kecil */
+    margin: 0 auto;
+  }
+  
