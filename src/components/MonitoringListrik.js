@@ -355,7 +355,7 @@ const MonitoringListrik = () => {
             nrOfLevels={20}
             colors={["#FF5F6D", "#FFC371"]}
             arcWidth={0.3}
-            percent={latestValues.teganganRN / 300}
+            percent={latestValues.teganganRN / 500}
             textColor="#000"
             formatTextValue={() => `${latestValues.teganganRN} V`}
           />
@@ -365,7 +365,7 @@ const MonitoringListrik = () => {
             nrOfLevels={20}
             colors={["#5BE12C", "#F5CD19"]}
             arcWidth={0.3}
-            percent={latestValues.teganganSN / 300}
+            percent={latestValues.teganganSN / 500}
             textColor="#000"
             formatTextValue={() => `${latestValues.teganganSN} V`}
           />
@@ -375,7 +375,7 @@ const MonitoringListrik = () => {
             nrOfLevels={20}
             colors={["#3D4ED8", "#25A5E6"]}
             arcWidth={0.3}
-            percent={latestValues.teganganTN / 300}
+            percent={latestValues.teganganTN / 500}
             textColor="#000"
             formatTextValue={() => `${latestValues.teganganTN} V`}
           />

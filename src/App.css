@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .ant-layout-sider {
+    position: relative;
+  }
+  .ant-layout-sider-collapsed {
+    width: 80px !important; /* Adjust collapsed width for mobile */
+  }
+}
