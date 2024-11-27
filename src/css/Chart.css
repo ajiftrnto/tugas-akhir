@@ -2,7 +2,7 @@
     display: flex; /* Menggunakan Flexbox untuk menata item di dalam container */
     justify-content: center; /* Memposisikan elemen secara horizontal di tengah */
     align-items: center; /* Memposisikan elemen secara vertikal di tengah */
-    gap: 20px; /* Menambahkan jarak antara chart */
+    /* Menambahkan jarak antara chart */
     flex-wrap: wrap; /* Agar chart bisa berpindah ke bawah jika ukuran layar kecil */
   }
   

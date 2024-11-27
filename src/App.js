@@ -1,37 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Layout } from "antd";
 import NavbarSidebar from "./components/NavbarSidebar";
 import Dashboard from "./components/Dashboard";
-import MonitoringListrik from "./components/MonitoringListrik"; // Mengarahkan ke "/"
-import { RequestProvider } from "./context/RequestContext";
-import DataTable from "./components/DataTable";
-
-const { Content } = Layout;
+import MonitoringListrik from "./components/MonitoringListrik";
+import Lantai4A from "./pages/Lantai4A";
 
 function App() {
   return (
-    <Layout style={{ marginLeft: 200 }}>
-      <NavbarSidebar />
-      <Content style={{ marginTop: 50 }}>
+    <Router>
+      <NavbarSidebar>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/monitoring-listrik" element={<MonitoringListrik />} />
-          {/* <Route path="/monitoring-data" element={<DataTable />} /> */}
+          <Route path="/monitoring/lantai4A" element={<Lantai4A />} />
         </Routes>
-      </Content>
-    </Layout>
-  );
-}
-
-function AppWithRouter() {
-  return (
-    <Router>
-      <RequestProvider>
-        <App />
-      </RequestProvider>
+      </NavbarSidebar>
     </Router>
   );
 }
 
-export default AppWithRouter;
+export default App;
