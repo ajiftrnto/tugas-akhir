@@ -82,7 +82,10 @@ const NavbarSidebar = ({ children }) => {
           <Menu.Item key="2" icon={<FileTextOutlined />}>
             <Link to="/komplain">Komplain</Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<FormOutlined />}>
+          <Menu.Item key="3" icon={<FileTextOutlined />}>
+            <Link to="/pengaduan">Form Pengaduan</Link>
+          </Menu.Item>
+          <Menu.Item key="4" icon={<FormOutlined />}>
             <Link to="/permintaan">Permintaan Perbaikan</Link>
           </Menu.Item>
           <SubMenu key="sub1" icon={<SettingOutlined />} title="Form Pemeliharaan">
@@ -101,6 +104,9 @@ const NavbarSidebar = ({ children }) => {
           </Menu.Item>
           <Menu.Item key="6" icon={<MonitorOutlined />}>
             <Link to="/monitoring-listrik">Monitoring Listrik</Link>
+          </Menu.Item>
+          <Menu.Item key="7" icon={<MonitorOutlined />}>
+            <Link to="/monitoring-data">Monitoring Data</Link>
           </Menu.Item>
         </Menu>
       </Sider>

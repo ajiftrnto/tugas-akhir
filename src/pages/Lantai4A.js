@@ -374,7 +374,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-ab"
             nrOfLevels={20}
-            colors={["#FF5F6D", "#FFC371"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.teganganAB / 500}
             textColor="#000"
@@ -384,7 +384,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-bc"
             nrOfLevels={20}
-            colors={["#5BE12C", "#F5CD19"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.teganganBC / 500}
             textColor="#000"
@@ -394,7 +394,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-ca"
             nrOfLevels={20}
-            colors={["#3D4ED8", "#25A5E6"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.teganganCA / 500}
             textColor="#000"
@@ -409,7 +409,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-rn"
             nrOfLevels={20}
-            colors={["#FF5F6D", "#FFC371"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.teganganRN / 500}
             textColor="#000"
@@ -419,7 +419,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-sn"
             nrOfLevels={20}
-            colors={["#5BE12C", "#F5CD19"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.teganganSN / 500}
             textColor="#000"
@@ -429,7 +429,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-tn"
             nrOfLevels={20}
-            colors={["#3D4ED8", "#25A5E6"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.teganganTN / 500}
             textColor="#000"
@@ -444,7 +444,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-ir"
             nrOfLevels={20}
-            colors={["#FF5F6D", "#FFC371"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.arusR / 500}
             textColor="#000"
@@ -454,7 +454,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-is"
             nrOfLevels={20}
-            colors={["#5BE12C", "#F5CD19"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.arusS / 500}
             textColor="#000"
@@ -464,7 +464,7 @@ const Lantai4A = () => {
           <GaugeChart
             id="gauge-it"
             nrOfLevels={20}
-            colors={["#3D4ED8", "#25A5E6"]}
+            colors={["#FFC371", "#FF0000"]}
             arcWidth={0.3}
             percent={latestValues.arusT / 500}
             textColor="#000"
